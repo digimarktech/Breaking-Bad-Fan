@@ -91,7 +91,6 @@ struct InfinitePageView<Page: View>: UIViewControllerRepresentable {
                 let currentViewController = pageViewController.viewControllers?.first,
                 let currentIndex = controllers.firstIndex(of: currentViewController)
             {
-                print("** Setting current page to \(currentIndex)")
                 parent.currentPage = currentIndex
             }
         }
