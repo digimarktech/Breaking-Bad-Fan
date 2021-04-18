@@ -7,8 +7,15 @@
 
 import SwiftUI
 
+/// A  custom view to represent a `UIPageViewController`.
+///
+/// This `UIPageViewController` is infinite by default which allows the user to continously swipe in either direction to view the content.
 struct InfinitePageView<Page: View>: UIViewControllerRepresentable {
+    
+    /// The views to display in the `InfinitePageView`.
     var pages: [Page]
+    
+    /// A two-way binding that  represents the `currentPage`.
     @Binding var currentPage: Int
     
     func makeUIViewController(context: Context) -> UIPageViewController {
