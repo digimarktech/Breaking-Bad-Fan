@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BD7C61EF262CD93C008C211F /* Breaking_Bad_FanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C61EE262CD93C008C211F /* Breaking_Bad_FanApp.swift */; };
+		BD7C61F1262CD93C008C211F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C61F0262CD93C008C211F /* ContentView.swift */; };
+		BD7C61F3262CD940008C211F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7C61F2262CD940008C211F /* Assets.xcassets */; };
+		BD7C61F6262CD940008C211F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7C61F5262CD940008C211F /* Preview Assets.xcassets */; };
+		BD7C6201262CD940008C211F /* Breaking_Bad_FanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C6200262CD940008C211F /* Breaking_Bad_FanTests.swift */; };
+		BD7C620C262CD940008C211F /* Breaking_Bad_FanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C620B262CD940008C211F /* Breaking_Bad_FanUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BD7C61FD262CD940008C211F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD7C61E3262CD93B008C211F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD7C61EA262CD93C008C211F;
+			remoteInfo = "Breaking Bad Fan";
+		};
+		BD7C6208262CD940008C211F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD7C61E3262CD93B008C211F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD7C61EA262CD93C008C211F;
+			remoteInfo = "Breaking Bad Fan";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BD7C61EB262CD93C008C211F /* Breaking Bad Fan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Breaking Bad Fan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD7C61EE262CD93C008C211F /* Breaking_Bad_FanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breaking_Bad_FanApp.swift; sourceTree = "<group>"; };
+		BD7C61F0262CD93C008C211F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BD7C61F2262CD940008C211F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD7C61F5262CD940008C211F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD7C61F7262CD940008C211F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD7C61FC262CD940008C211F /* Breaking Bad FanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Breaking Bad FanTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD7C6200262CD940008C211F /* Breaking_Bad_FanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breaking_Bad_FanTests.swift; sourceTree = "<group>"; };
+		BD7C6202262CD940008C211F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD7C6207262CD940008C211F /* Breaking Bad FanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Breaking Bad FanUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD7C620B262CD940008C211F /* Breaking_Bad_FanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breaking_Bad_FanUITests.swift; sourceTree = "<group>"; };
+		BD7C620D262CD940008C211F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BD7C61E8262CD93C008C211F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD7C61F9262CD940008C211F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD7C6204262CD940008C211F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BD7C61E2262CD93B008C211F = {
+			isa = PBXGroup;
+			children = (
+				BD7C61ED262CD93C008C211F /* Breaking Bad Fan */,
+				BD7C61FF262CD940008C211F /* Breaking Bad FanTests */,
+				BD7C620A262CD940008C211F /* Breaking Bad FanUITests */,
+				BD7C61EC262CD93C008C211F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BD7C61EC262CD93C008C211F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD7C61EB262CD93C008C211F /* Breaking Bad Fan.app */,
+				BD7C61FC262CD940008C211F /* Breaking Bad FanTests.xctest */,
+				BD7C6207262CD940008C211F /* Breaking Bad FanUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD7C61ED262CD93C008C211F /* Breaking Bad Fan */ = {
+			isa = PBXGroup;
+			children = (
+				BD7C61EE262CD93C008C211F /* Breaking_Bad_FanApp.swift */,
+				BD7C61F0262CD93C008C211F /* ContentView.swift */,
+				BD7C61F2262CD940008C211F /* Assets.xcassets */,
+				BD7C61F7262CD940008C211F /* Info.plist */,
+				BD7C61F4262CD940008C211F /* Preview Content */,
+			);
+			path = "Breaking Bad Fan";
+			sourceTree = "<group>";
+		};
+		BD7C61F4262CD940008C211F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BD7C61F5262CD940008C211F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BD7C61FF262CD940008C211F /* Breaking Bad FanTests */ = {
+			isa = PBXGroup;
+			children = (
+				BD7C6200262CD940008C211F /* Breaking_Bad_FanTests.swift */,
+				BD7C6202262CD940008C211F /* Info.plist */,
+			);
+			path = "Breaking Bad FanTests";
+			sourceTree = "<group>";
+		};
+		BD7C620A262CD940008C211F /* Breaking Bad FanUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BD7C620B262CD940008C211F /* Breaking_Bad_FanUITests.swift */,
+				BD7C620D262CD940008C211F /* Info.plist */,
+			);
+			path = "Breaking Bad FanUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BD7C61EA262CD93C008C211F /* Breaking Bad Fan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD7C6210262CD940008C211F /* Build configuration list for PBXNativeTarget "Breaking Bad Fan" */;
+			buildPhases = (
+				BD7C61E7262CD93C008C211F /* Sources */,
+				BD7C61E8262CD93C008C211F /* Frameworks */,
+				BD7C61E9262CD93C008C211F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Breaking Bad Fan";
+			productName = "Breaking Bad Fan";
+			productReference = BD7C61EB262CD93C008C211F /* Breaking Bad Fan.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BD7C61FB262CD940008C211F /* Breaking Bad FanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD7C6213262CD940008C211F /* Build configuration list for PBXNativeTarget "Breaking Bad FanTests" */;
+			buildPhases = (
+				BD7C61F8262CD940008C211F /* Sources */,
+				BD7C61F9262CD940008C211F /* Frameworks */,
+				BD7C61FA262CD940008C211F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD7C61FE262CD940008C211F /* PBXTargetDependency */,
+			);
+			name = "Breaking Bad FanTests";
+			productName = "Breaking Bad FanTests";
+			productReference = BD7C61FC262CD940008C211F /* Breaking Bad FanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD7C6206262CD940008C211F /* Breaking Bad FanUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD7C6216262CD940008C211F /* Build configuration list for PBXNativeTarget "Breaking Bad FanUITests" */;
+			buildPhases = (
+				BD7C6203262CD940008C211F /* Sources */,
+				BD7C6204262CD940008C211F /* Frameworks */,
+				BD7C6205262CD940008C211F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD7C6209262CD940008C211F /* PBXTargetDependency */,
+			);
+			name = "Breaking Bad FanUITests";
+			productName = "Breaking Bad FanUITests";
+			productReference = BD7C6207262CD940008C211F /* Breaking Bad FanUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD7C61E3262CD93B008C211F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					BD7C61EA262CD93C008C211F = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					BD7C61FB262CD940008C211F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = BD7C61EA262CD93C008C211F;
+					};
+					BD7C6206262CD940008C211F = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = BD7C61EA262CD93C008C211F;
+					};
+				};
+			};
+			buildConfigurationList = BD7C61E6262CD93B008C211F /* Build configuration list for PBXProject "Breaking Bad Fan" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD7C61E2262CD93B008C211F;
+			productRefGroup = BD7C61EC262CD93C008C211F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD7C61EA262CD93C008C211F /* Breaking Bad Fan */,
+				BD7C61FB262CD940008C211F /* Breaking Bad FanTests */,
+				BD7C6206262CD940008C211F /* Breaking Bad FanUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD7C61E9262CD93C008C211F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7C61F6262CD940008C211F /* Preview Assets.xcassets in Resources */,
+				BD7C61F3262CD940008C211F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD7C61FA262CD940008C211F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD7C6205262CD940008C211F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BD7C61E7262CD93C008C211F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7C61F1262CD93C008C211F /* ContentView.swift in Sources */,
+				BD7C61EF262CD93C008C211F /* Breaking_Bad_FanApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD7C61F8262CD940008C211F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7C6201262CD940008C211F /* Breaking_Bad_FanTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD7C6203262CD940008C211F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD7C620C262CD940008C211F /* Breaking_Bad_FanUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BD7C61FE262CD940008C211F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD7C61EA262CD93C008C211F /* Breaking Bad Fan */;
+			targetProxy = BD7C61FD262CD940008C211F /* PBXContainerItemProxy */;
+		};
+		BD7C6209262CD940008C211F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD7C61EA262CD93C008C211F /* Breaking Bad Fan */;
+			targetProxy = BD7C6208262CD940008C211F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BD7C620E262CD940008C211F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BD7C620F262CD940008C211F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD7C6211262CD940008C211F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Breaking Bad Fan/Preview Content\"";
+				DEVELOPMENT_TEAM = 4T87K25SZU;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Breaking Bad Fan/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digimarktech.Breaking-Bad-Fan";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD7C6212262CD940008C211F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Breaking Bad Fan/Preview Content\"";
+				DEVELOPMENT_TEAM = 4T87K25SZU;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Breaking Bad Fan/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digimarktech.Breaking-Bad-Fan";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BD7C6214262CD940008C211F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4T87K25SZU;
+				INFOPLIST_FILE = "Breaking Bad FanTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digimarktech.Breaking-Bad-FanTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Breaking Bad Fan.app/Breaking Bad Fan";
+			};
+			name = Debug;
+		};
+		BD7C6215262CD940008C211F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4T87K25SZU;
+				INFOPLIST_FILE = "Breaking Bad FanTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digimarktech.Breaking-Bad-FanTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Breaking Bad Fan.app/Breaking Bad Fan";
+			};
+			name = Release;
+		};
+		BD7C6217262CD940008C211F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4T87K25SZU;
+				INFOPLIST_FILE = "Breaking Bad FanUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digimarktech.Breaking-Bad-FanUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Breaking Bad Fan";
+			};
+			name = Debug;
+		};
+		BD7C6218262CD940008C211F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4T87K25SZU;
+				INFOPLIST_FILE = "Breaking Bad FanUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.digimarktech.Breaking-Bad-FanUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Breaking Bad Fan";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BD7C61E6262CD93B008C211F /* Build configuration list for PBXProject "Breaking Bad Fan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD7C620E262CD940008C211F /* Debug */,
+				BD7C620F262CD940008C211F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD7C6210262CD940008C211F /* Build configuration list for PBXNativeTarget "Breaking Bad Fan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD7C6211262CD940008C211F /* Debug */,
+				BD7C6212262CD940008C211F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD7C6213262CD940008C211F /* Build configuration list for PBXNativeTarget "Breaking Bad FanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD7C6214262CD940008C211F /* Debug */,
+				BD7C6215262CD940008C211F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD7C6216262CD940008C211F /* Build configuration list for PBXNativeTarget "Breaking Bad FanUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD7C6217262CD940008C211F /* Debug */,
+				BD7C6218262CD940008C211F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD7C61E3262CD93B008C211F /* Project object */;
+}
