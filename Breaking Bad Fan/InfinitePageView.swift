@@ -16,7 +16,7 @@ struct InfinitePageView<Page: View>: UIViewControllerRepresentable {
     var pages: [Page]
     
     /// A two-way binding that  represents the `currentPage`.
-    @Binding var currentPage: Int
+    var currentPage: Int = 0
     
     func makeUIViewController(context: Context) -> UIPageViewController {
         let pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
@@ -91,6 +91,7 @@ struct InfinitePageView<Page: View>: UIViewControllerRepresentable {
                 let currentViewController = pageViewController.viewControllers?.first,
                 let currentIndex = controllers.firstIndex(of: currentViewController)
             {
+                print("** Setting current page to \(currentIndex)")
                 parent.currentPage = currentIndex
             }
         }
@@ -104,7 +105,7 @@ struct InfinitePageView_Previews: PreviewProvider {
             Color(.systemRed),
             Color(.systemGreen),
             Color(.systemBlue)
-        ], currentPage: $currentPage)
+        ])
         
     }
 }
