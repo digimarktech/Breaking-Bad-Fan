@@ -64,9 +64,16 @@ struct ContentView: View {
                         }
                     }.padding(.horizontal)
                     .navigationBarTitle("Breaking Bad")
+                    .navigationBarItems(trailing: Button(action: {
+                        print("Location pressed")
+                    }, label: {
+                        Image(systemName: "location")
+                    }))
+                    
                 }
+                .background(LinearGradient(gradient: Gradient(colors: [.black, .green]), startPoint: .leading, endPoint: .trailing))
+                .edgesIgnoringSafeArea(.bottom)
             }
-            
             .onAppear {
                 self.viewModel.getCharacters()
             }
