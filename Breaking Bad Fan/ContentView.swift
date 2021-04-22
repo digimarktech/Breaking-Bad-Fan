@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ContentView: View {
     
@@ -27,13 +28,34 @@ struct ContentView: View {
                 }
             ])
             .frame(height: 300)
-            LazyVGrid(columns: columns, content: {
-                ForEach(viewModel.characters) { character in
-                    RoundedRectangle(cornerRadius: 20)
-                        .fill(Color.green)
-                        .frame(height: 100)
-                }.padding(.horizontal, 10)
-            })
+            VStack(alignment: .leading) {
+                HStack {
+                    Text("Characters")
+                        .font(.title)
+                        .fontWeight(.medium)
+                    Spacer()
+                    Button("View All") {
+                        print("View all was pressed")
+                    }
+                }
+                ScrollView(.horizontal) {
+                    LazyHStack(spacing: 24) {
+                        ForEach(viewModel.characters) { character in
+                            VStack(alignment: .leading) {
+                                KFImage(character.imageURL)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(width: 200, height: 300)
+                                    .clipped()
+                                    .cornerRadius(10)
+                                Text(character.name)
+                                    .font(.subheadline)
+                            }
+                            .padding(.bottom, 16)
+                        }
+                    }
+                }
+            }.padding(.horizontal)
         }
         .onAppear {
             self.viewModel.getCharacters()
