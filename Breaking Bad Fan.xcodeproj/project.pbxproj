@@ -15,6 +15,7 @@
 		BD7C620C262CD940008C211F /* Breaking_Bad_FanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C620B262CD940008C211F /* Breaking_Bad_FanUITests.swift */; };
 		BD7C621D262CD9F4008C211F /* InfinitePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C621C262CD9F4008C211F /* InfinitePageView.swift */; };
 		BD7C6223262DF6AD008C211F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BD7C6222262DF6AD008C211F /* Kingfisher */; };
+		BD7C62282631393A008C211F /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C62272631393A008C211F /* CharacterDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		BD7C620B262CD940008C211F /* Breaking_Bad_FanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breaking_Bad_FanUITests.swift; sourceTree = "<group>"; };
 		BD7C620D262CD940008C211F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD7C621C262CD9F4008C211F /* InfinitePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinitePageView.swift; sourceTree = "<group>"; };
+		BD7C62272631393A008C211F /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				BD7C61F7262CD940008C211F /* Info.plist */,
 				BD7C61F4262CD940008C211F /* Preview Content */,
 				BD7C621C262CD9F4008C211F /* InfinitePageView.swift */,
+				BD7C62272631393A008C211F /* CharacterDetailView.swift */,
 			);
 			path = "Breaking Bad Fan";
 			sourceTree = "<group>";
@@ -273,6 +276,7 @@
 				BD7C621D262CD9F4008C211F /* InfinitePageView.swift in Sources */,
 				BD7C61F1262CD93C008C211F /* ContentView.swift in Sources */,
 				BD7C61EF262CD93C008C211F /* Breaking_Bad_FanApp.swift in Sources */,
+				BD7C62282631393A008C211F /* CharacterDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
