@@ -112,10 +112,16 @@ struct CharacterDetailView: View {
             .edgesIgnoringSafeArea(.all)
             .background(Color.black.edgesIgnoringSafeArea(.all))
             .navigationBarHidden(true)
-            Button("Test") {
+            Button(action: {
                 self.presentationMode.wrappedValue.dismiss()
+            }) {
+                Image(systemName: "chevron.backward")
+                    .renderingMode(.template)
+                    .foregroundColor(.white)
+                    .font(.title)
             }
             .offset(x: 20, y: 20)
+            
         }
         
     }
