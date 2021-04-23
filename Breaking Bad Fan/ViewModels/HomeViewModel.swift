@@ -29,8 +29,8 @@ final class HomeViewModel: ObservableObject {
                     // handle finished case
                 break
                 }
-            } receiveValue: { characters in
-                self.characters = characters
+            } receiveValue: { [weak self] characters in
+                self?.characters = characters
             }
     }
 }
