@@ -6,24 +6,34 @@
 //
 
 import Foundation
+import Combine
 
+/// An `ObservableObject` that is used to drive the data for the `HomeView`.
 final class HomeViewModel: ObservableObject {
+    
+    /// The characters returned from the api request.
     @Published var characters = [ShowCharacter]()
     
+    private var apiService = APIService()
+    private var cancellable: AnyCancellable?
+    
+    /// Request characters from the api.
     func getCharacters() {
-        URLSession.shared.dataTask(with: URL(string: "https://www.breakingbadapi.com/api/characters")!) { (data, _, error) in
-            if let error = error {
-                print(error.localizedDescription)
-                return
-            }
-            guard let data = data else {
-                return
-            }
-            if let characters = try? JSONDecoder().decode([ShowCharacter].self, from: data) {
-                DispatchQueue.main.async {
-                    self.characters = characters
+        cancellable = apiService.getCharacters(CharacterEndpoint())
+            .sink { error in
+                switch error {
+                case .failure:
+                    // handle error case
+                    print("** The error is \(error)")
+                break
+                case .finished:
+                    // handle finished case
+                    print("** Finished fetching")
+                break
                 }
+            } receiveValue: { characters in
+                print("** The character count is \(characters.count)")
+                self.characters = characters
             }
-        }.resume()
     }
 }

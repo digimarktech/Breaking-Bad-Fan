@@ -11,7 +11,7 @@ import Foundation
 protocol Endpoint {
     
     /// The base `URL` for the endpoint.
-    var baseURL: URL { get }
+    var baseURL: String { get }
     
     /// The specific path.
     var path: String { get }
@@ -23,7 +23,7 @@ extension Endpoint {
     
     /// The `URLComponents` structure for the full `baseURL` and `path`
     var urlComponents: URLComponents {
-        var components = URLComponents(string: baseURL.absoluteString)!
+        var components = URLComponents(string: baseURL)!
         components.path = path
         return components
     }

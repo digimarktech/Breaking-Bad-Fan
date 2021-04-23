@@ -10,11 +10,11 @@ import Foundation
 /// The `Endpoint` used to fetch characters from the api.
 struct CharacterEndpoint: Endpoint {
     
-    var baseURL: URL {
-        return URL(string: "https://www.breakingbadapi.com/api")!
+    var baseURL: String {
+        return "https://www.breakingbadapi.com"
     }
     
     var path: String {
-        return "/characters"
+        return "/api/characters"
     }
 }
