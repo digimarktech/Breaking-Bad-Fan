@@ -28,10 +28,70 @@ struct CharacterDetailView: View {
                     Text(character.name)
                         .font(.system(size: 35, weight: .bold))
                         .foregroundColor(.white)
-                    HStack(spacing: 15) {
-                        ForEach(1...5, id: \.self) { _ in
-                            Image(systemName: "star.fill")
-                                .foregroundColor(.white)
+                    HStack {
+                        Text("Real name: ")
+                            .foregroundColor(.white)
+                            .font(.subheadline)
+                            .fontWeight(.medium)
+                        Text(character.realName)
+                            .foregroundColor(.white)
+                            .font(.subheadline)
+                    }
+                    HStack {
+                        Text("Nickname: ")
+                            .foregroundColor(.white)
+                            .font(.subheadline)
+                            .fontWeight(.medium)
+                        Text(character.nickname)
+                            .foregroundColor(.white)
+                            .font(.subheadline)
+                    }
+                    HStack {
+                        Text("Status: ")
+                            .foregroundColor(.white)
+                            .font(.subheadline)
+                            .fontWeight(.medium)
+                        Text(character.status)
+                            .foregroundColor(.white)
+                            .font(.subheadline)
+                    }
+                    HStack {
+                        Text("Birthday: ")
+                            .foregroundColor(.white)
+                            .font(.subheadline)
+                            .fontWeight(.medium)
+                        Text(character.birthday)
+                            .foregroundColor(.white)
+                            .font(.subheadline)
+                    }
+                    VStack(alignment: .leading) {
+                        Text("Occupation: ")
+                            .foregroundColor(.white)
+                            .font(.subheadline)
+                            .fontWeight(.medium)
+                            .padding(.bottom, 2)
+                        ForEach(character.occupation, id: \.self) { occupation in
+                            HStack {
+                                Text("∗ ")
+                                Text(occupation)
+                            }
+                            .foregroundColor(.white)
+                            .font(.subheadline)
+                        }
+                    }
+                    VStack(alignment: .leading) {
+                        Text("Seasons: ")
+                            .foregroundColor(.white)
+                            .font(.subheadline)
+                            .fontWeight(.medium)
+                            .padding(.bottom, 2)
+                        ForEach(character.seasons, id: \.self) { season in
+                            HStack {
+                                Text("∗ ")
+                                Text("\(season)")
+                            }
+                            .foregroundColor(.white)
+                            .font(.subheadline)
                         }
                     }
                     Text("Some sample text that I can replace later")

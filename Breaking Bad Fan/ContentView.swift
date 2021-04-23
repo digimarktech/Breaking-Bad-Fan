@@ -71,7 +71,6 @@ struct ContentView: View {
                     }))
                     
                 }
-                .background(LinearGradient(gradient: Gradient(colors: [.black, .green]), startPoint: .leading, endPoint: .trailing))
                 .edgesIgnoringSafeArea(.bottom)
             }
             .onAppear {
