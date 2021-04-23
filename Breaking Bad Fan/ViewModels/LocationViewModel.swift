@@ -36,20 +36,19 @@ final class LocationViewModel: NSObject, ObservableObject {
     
     // MARK: Private methods
     
-    private func getPlacemark(for location: CLLocation?) -> CLPlacemark? {
+    private func getPlacemark(for location: CLLocation?) {
         guard let location = location else {
-            return nil
+            return
         }
-        var placeMarkToReturn: CLPlacemark?
+        
         let geocoder = CLGeocoder()
-        geocoder.reverseGeocodeLocation(location) { placemarks, error in
+        geocoder.reverseGeocodeLocation(location) { [weak self] placemarks, error in
             if let error = error {
                 print(error.localizedDescription)
             } else {
-                placeMarkToReturn = placemarks?.first
+                self?.currentPlacemark = placemarks?.first
             }
         }
-        return placeMarkToReturn
     }
 }
 
@@ -67,6 +66,6 @@ extension LocationViewModel: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         lastLocation = locations.first
-        self.currentPlacemark = getPlacemark(for: locations.first)
+        getPlacemark(for: locations.first)
     }
 }

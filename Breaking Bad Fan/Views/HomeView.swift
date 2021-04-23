@@ -8,12 +8,21 @@
 import SwiftUI
 import Kingfisher
 
+struct LocationError: Identifiable {
+    var id: String {
+        return message
+    }
+    var title: String
+    var message: String
+}
+
 /// Represents the home screen of the app.
 struct HomeView: View {
     
     @StateObject private var homeViewModel = HomeViewModel()
     @StateObject private var locationViewModel = LocationViewModel()
     @State private var isPresented = false
+    @State private var locationError: LocationError?
     
     var body: some View {
         ZStack {
@@ -73,6 +82,14 @@ struct HomeView: View {
             }
             .onAppear {
                 self.homeViewModel.getCharacters()
+                locationViewModel.requestPermission()
+            }
+            .sheet(isPresented: $isPresented) {
+                LocationView()
+                    .environmentObject(locationViewModel)
+            }
+            .alert(item: $locationError) { locationError in
+                Alert(title: Text(locationError.title), message: Text(locationError.message), dismissButton: .default(Text("Ok")))
             }
         }
     }
@@ -80,16 +97,15 @@ struct HomeView: View {
     private func checkAuthorizationStatus() {
         switch locationViewModel.authorizationStatus {
         case .notDetermined:
-            print("Need to request location")
             locationViewModel.requestPermission()
         case .authorizedAlways, .authorizedWhenInUse:
-            print("Show location view with tracking information")
+            isPresented.toggle()
         case .denied:
-            print("Prompt user to allow permissions in settings")
+            self.locationError = LocationError(title: "Permissions Denied", message: "Please allow location permissions in settings.")
         case .restricted:
-            print("Location permissions are restricted")
+            self.locationError = LocationError(title: "Permissions Restricted", message: "Location permissions are restricted")
         @unknown default:
-            print("Unknown error processing location")
+            self.locationError = LocationError(title: "Unknown Error", message: "Unable to process location at this time.")
         }
     }
 }
