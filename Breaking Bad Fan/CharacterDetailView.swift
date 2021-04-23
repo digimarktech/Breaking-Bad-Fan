@@ -24,87 +24,83 @@ struct CharacterDetailView: View {
                     
                 }
                 .frame(height: 480)
-                VStack(alignment: .leading, spacing: 15) {
-                    Text(character.name)
-                        .font(.system(size: 35, weight: .bold))
-                        .foregroundColor(.white)
-                    HStack {
-                        Text("Real name: ")
+                HStack {
+                    VStack(alignment: .leading, spacing: 15) {
+                        Text(character.name)
+                            .font(.system(size: 35, weight: .bold))
                             .foregroundColor(.white)
-                            .font(.subheadline)
-                            .fontWeight(.medium)
-                        Text(character.realName)
-                            .foregroundColor(.white)
-                            .font(.subheadline)
-                    }
-                    HStack {
-                        Text("Nickname: ")
-                            .foregroundColor(.white)
-                            .font(.subheadline)
-                            .fontWeight(.medium)
-                        Text(character.nickname)
-                            .foregroundColor(.white)
-                            .font(.subheadline)
-                    }
-                    HStack {
-                        Text("Status: ")
-                            .foregroundColor(.white)
-                            .font(.subheadline)
-                            .fontWeight(.medium)
-                        Text(character.status)
-                            .foregroundColor(.white)
-                            .font(.subheadline)
-                    }
-                    HStack {
-                        Text("Birthday: ")
-                            .foregroundColor(.white)
-                            .font(.subheadline)
-                            .fontWeight(.medium)
-                        Text(character.birthday)
-                            .foregroundColor(.white)
-                            .font(.subheadline)
-                    }
-                    VStack(alignment: .leading) {
-                        Text("Occupation: ")
-                            .foregroundColor(.white)
-                            .font(.subheadline)
-                            .fontWeight(.medium)
-                            .padding(.bottom, 2)
-                        ForEach(character.occupation, id: \.self) { occupation in
-                            HStack {
-                                Text("∗ ")
-                                Text(occupation)
+                        HStack {
+                            Text("Real name: ")
+                                .foregroundColor(.white)
+                                .font(.subheadline)
+                                .fontWeight(.medium)
+                            Text(character.realName)
+                                .foregroundColor(.white)
+                                .font(.subheadline)
+                        }
+                        HStack {
+                            Text("Nickname: ")
+                                .foregroundColor(.white)
+                                .font(.subheadline)
+                                .fontWeight(.medium)
+                            Text(character.nickname)
+                                .foregroundColor(.white)
+                                .font(.subheadline)
+                        }
+                        HStack {
+                            Text("Status: ")
+                                .foregroundColor(.white)
+                                .font(.subheadline)
+                                .fontWeight(.medium)
+                            Text(character.status)
+                                .foregroundColor(.white)
+                                .font(.subheadline)
+                        }
+                        HStack {
+                            Text("Birthday: ")
+                                .foregroundColor(.white)
+                                .font(.subheadline)
+                                .fontWeight(.medium)
+                            Text(character.birthday)
+                                .foregroundColor(.white)
+                                .font(.subheadline)
+                        }
+                        VStack(alignment: .leading) {
+                            Text("Occupation: ")
+                                .foregroundColor(.white)
+                                .font(.subheadline)
+                                .fontWeight(.medium)
+                                .padding(.bottom, 2)
+                            ForEach(character.occupation, id: \.self) { occupation in
+                                HStack {
+                                    Text("∗ ")
+                                    Text(occupation)
+                                }
+                                .foregroundColor(.white)
+                                .font(.subheadline)
                             }
-                            .foregroundColor(.white)
-                            .font(.subheadline)
+                        }
+                        VStack(alignment: .leading) {
+                            Text("Seasons: ")
+                                .foregroundColor(.white)
+                                .font(.subheadline)
+                                .fontWeight(.medium)
+                                .padding(.bottom, 2)
+                            ForEach(character.seasons, id: \.self) { season in
+                                HStack {
+                                    Text("∗ ")
+                                    Text("\(season)")
+                                }
+                                .foregroundColor(.white)
+                                .font(.subheadline)
+                            }
                         }
                     }
-                    VStack(alignment: .leading) {
-                        Text("Seasons: ")
-                            .foregroundColor(.white)
-                            .font(.subheadline)
-                            .fontWeight(.medium)
-                            .padding(.bottom, 2)
-                        ForEach(character.seasons, id: \.self) { season in
-                            HStack {
-                                Text("∗ ")
-                                Text("\(season)")
-                            }
-                            .foregroundColor(.white)
-                            .font(.subheadline)
-                        }
-                    }
-                    Text("Some sample text that I can replace later")
-                        .font(.caption)
-                        .foregroundColor(.white)
-                        .padding(.top, 5)
-                    
-                    Text(tempText)
-                        .padding(.top, 10)
-                        .foregroundColor(.white)
+                    Spacer()
                 }
                 .padding(.top, 25)
                 .padding(.horizontal)
+                .frame(width: UIScreen.main.bounds.width)
                 .background(Color.black)
                 .cornerRadius(20)
                 .offset(y: -35)
@@ -121,12 +117,8 @@ struct CharacterDetailView: View {
                     .font(.title)
             }
             .offset(x: 20, y: 20)
-            
         }
-        
     }
-    
-    var tempText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
 }
 
 //struct CharacterDetailView_Previews: PreviewProvider {
