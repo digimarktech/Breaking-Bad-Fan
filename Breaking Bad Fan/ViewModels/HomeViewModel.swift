@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class ViewModel: ObservableObject {
+final class HomeViewModel: ObservableObject {
     @Published var characters = [ShowCharacter]()
     
     func getCharacters() {

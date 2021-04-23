@@ -11,8 +11,7 @@ import Kingfisher
 /// Represents the home screen of the app.
 struct HomeView: View {
     
-    @StateObject var viewModel = ViewModel()
-    @State var selected: ShowCharacter = ShowCharacter(id: 1, name: "Walter White", birthday: "09-07-1958", occupation: ["High School Chemistry Teacher", "Meth King Pin"], imageURL: URL(string: "https://images.amcnetworks.com/amc.com/wp-content/uploads/2015/04/cast_bb_700x1000_walter-white-lg.jpg")!, status: "Presumed dead", nickname: "Heisenberg", seasons: [1,2,3,4,5], realName: "Bryan Cranston")
+    @StateObject var homeViewModel = HomeViewModel()
     
     var body: some View {
         ZStack {
@@ -42,7 +41,7 @@ struct HomeView: View {
                         }
                         ScrollView(.horizontal) {
                             LazyHStack(spacing: 24) {
-                                ForEach(viewModel.characters) { character in
+                                ForEach(homeViewModel.characters) { character in
                                     VStack(alignment: .leading) {
                                         NavigationLink(destination: CharacterDetailView(character: character)) {
                                             KFImage(character.imageURL)
@@ -71,7 +70,7 @@ struct HomeView: View {
                 .edgesIgnoringSafeArea(.bottom)
             }
             .onAppear {
-                self.viewModel.getCharacters()
+                self.homeViewModel.getCharacters()
             }
         }
     }
