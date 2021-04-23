@@ -120,27 +120,3 @@ final class ViewModel: ObservableObject {
         }.resume()
     }
 }
-
-struct ShowCharacter: Codable, Identifiable {
-    let id: Int
-    let name: String
-    let birthday: String
-    let occupation: [String]
-    let imageURL: URL
-    let status: String
-    let nickname: String
-    let seasons: [Int]
-    let realName: String
-    
-    enum CodingKeys: String, CodingKey {
-        case id = "char_id"
-        case name
-        case birthday
-        case occupation
-        case imageURL = "img"
-        case status
-        case nickname
-        case seasons = "appearance"
-        case realName = "portrayed"
-    }
-}

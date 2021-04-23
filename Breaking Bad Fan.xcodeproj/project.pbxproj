@@ -16,6 +16,7 @@
 		BD7C621D262CD9F4008C211F /* InfinitePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C621C262CD9F4008C211F /* InfinitePageView.swift */; };
 		BD7C6223262DF6AD008C211F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BD7C6222262DF6AD008C211F /* Kingfisher */; };
 		BD7C62282631393A008C211F /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C62272631393A008C211F /* CharacterDetailView.swift */; };
+		BD7C623226328CCF008C211F /* ShowCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C623126328CCF008C211F /* ShowCharacter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		BD7C620D262CD940008C211F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD7C621C262CD9F4008C211F /* InfinitePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinitePageView.swift; sourceTree = "<group>"; };
 		BD7C62272631393A008C211F /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
+		BD7C623126328CCF008C211F /* ShowCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCharacter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		BD7C61ED262CD93C008C211F /* Breaking Bad Fan */ = {
 			isa = PBXGroup;
 			children = (
+				BD7C623026328C93008C211F /* Models */,
 				BD7C61EE262CD93C008C211F /* Breaking_Bad_FanApp.swift */,
 				BD7C61F0262CD93C008C211F /* ContentView.swift */,
 				BD7C61F2262CD940008C211F /* Assets.xcassets */,
@@ -136,6 +139,14 @@
 				BD7C620D262CD940008C211F /* Info.plist */,
 			);
 			path = "Breaking Bad FanUITests";
+			sourceTree = "<group>";
+		};
+		BD7C623026328C93008C211F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BD7C623126328CCF008C211F /* ShowCharacter.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +286,7 @@
 			files = (
 				BD7C621D262CD9F4008C211F /* InfinitePageView.swift in Sources */,
 				BD7C61F1262CD93C008C211F /* ContentView.swift in Sources */,
+				BD7C623226328CCF008C211F /* ShowCharacter.swift in Sources */,
 				BD7C61EF262CD93C008C211F /* Breaking_Bad_FanApp.swift in Sources */,
 				BD7C62282631393A008C211F /* CharacterDetailView.swift in Sources */,
 			);
