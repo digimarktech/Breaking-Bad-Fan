@@ -19,6 +19,7 @@
 		BD7C623226328CCF008C211F /* ShowCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C623126328CCF008C211F /* ShowCharacter.swift */; };
 		BD7C624726328FBA008C211F /* CarouselCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C624626328FBA008C211F /* CarouselCardView.swift */; };
 		BD7C624C26329044008C211F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C624B26329044008C211F /* HomeViewModel.swift */; };
+		BD7C625226329223008C211F /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C625126329223008C211F /* Endpoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		BD7C623126328CCF008C211F /* ShowCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCharacter.swift; sourceTree = "<group>"; };
 		BD7C624626328FBA008C211F /* CarouselCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCardView.swift; sourceTree = "<group>"; };
 		BD7C624B26329044008C211F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		BD7C625126329223008C211F /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		BD7C61ED262CD93C008C211F /* Breaking Bad Fan */ = {
 			isa = PBXGroup;
 			children = (
+				BD7C625026329211008C211F /* Networking */,
 				BD7C624226328F2D008C211F /* Services */,
 				BD7C624126328F23008C211F /* ViewModels */,
 				BD7C623926328EB8008C211F /* Views */,
@@ -177,6 +180,14 @@
 			children = (
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		BD7C625026329211008C211F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BD7C625126329223008C211F /* Endpoint.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +327,7 @@
 			files = (
 				BD7C621D262CD9F4008C211F /* InfinitePageView.swift in Sources */,
 				BD7C61F1262CD93C008C211F /* HomeView.swift in Sources */,
+				BD7C625226329223008C211F /* Endpoint.swift in Sources */,
 				BD7C624C26329044008C211F /* HomeViewModel.swift in Sources */,
 				BD7C624726328FBA008C211F /* CarouselCardView.swift in Sources */,
 				BD7C623226328CCF008C211F /* ShowCharacter.swift in Sources */,
