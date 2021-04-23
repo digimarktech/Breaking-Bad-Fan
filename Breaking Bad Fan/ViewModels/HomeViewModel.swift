@@ -24,15 +24,12 @@ final class HomeViewModel: ObservableObject {
                 switch error {
                 case .failure:
                     // handle error case
-                    print("** The error is \(error)")
                 break
                 case .finished:
                     // handle finished case
-                    print("** Finished fetching")
                 break
                 }
             } receiveValue: { characters in
-                print("** The character count is \(characters.count)")
                 self.characters = characters
             }
     }
