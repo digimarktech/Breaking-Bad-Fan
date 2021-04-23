@@ -103,14 +103,14 @@
 		BD7C61ED262CD93C008C211F /* Breaking Bad Fan */ = {
 			isa = PBXGroup;
 			children = (
+				BD7C624226328F2D008C211F /* Services */,
+				BD7C624126328F23008C211F /* ViewModels */,
+				BD7C623926328EB8008C211F /* Views */,
 				BD7C623026328C93008C211F /* Models */,
 				BD7C61EE262CD93C008C211F /* Breaking_Bad_FanApp.swift */,
-				BD7C61F0262CD93C008C211F /* HomeView.swift */,
-				BD7C61F2262CD940008C211F /* Assets.xcassets */,
 				BD7C61F7262CD940008C211F /* Info.plist */,
+				BD7C61F2262CD940008C211F /* Assets.xcassets */,
 				BD7C61F4262CD940008C211F /* Preview Content */,
-				BD7C621C262CD9F4008C211F /* InfinitePageView.swift */,
-				BD7C62272631393A008C211F /* CharacterDetailView.swift */,
 			);
 			path = "Breaking Bad Fan";
 			sourceTree = "<group>";
@@ -147,6 +147,30 @@
 				BD7C623126328CCF008C211F /* ShowCharacter.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		BD7C623926328EB8008C211F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BD7C61F0262CD93C008C211F /* HomeView.swift */,
+				BD7C62272631393A008C211F /* CharacterDetailView.swift */,
+				BD7C621C262CD9F4008C211F /* InfinitePageView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BD7C624126328F23008C211F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BD7C624226328F2D008C211F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
