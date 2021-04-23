@@ -11,6 +11,7 @@ import CoreLocation
 /// A `View` subclass that displays the users location information
 struct LocationView: View {
     
+    @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var locationViewModel: LocationViewModel
     
     /// Returns the last known coordinate of this device.
@@ -24,14 +25,21 @@ struct LocationView: View {
     }
     
     var body: some View {
-        VStack {
-            Text("Latitude: \(coordinate?.latitude ?? 0)")
-            Text("Longitude: \(coordinate?.longitude ?? 0)")
-            if let cityName = cityName {
-                Text("City: \(cityName)")
+        NavigationView {
+            VStack {
+                Text("Latitude: \(coordinate?.latitude ?? 0)")
+                Text("Longitude: \(coordinate?.longitude ?? 0)")
+                if let cityName = cityName {
+                    Text("City: \(cityName)")
+                }
             }
+            .font(.title)
+            .navigationBarItems(trailing: Button(action: {
+                presentationMode.wrappedValue.dismiss()
+            }, label: {
+                Text("Done")
+            }))
         }
-        .font(.title)
     }
 }
 
