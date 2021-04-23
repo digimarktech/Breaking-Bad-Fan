@@ -18,6 +18,7 @@
 		BD7C62282631393A008C211F /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C62272631393A008C211F /* CharacterDetailView.swift */; };
 		BD7C623226328CCF008C211F /* ShowCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C623126328CCF008C211F /* ShowCharacter.swift */; };
 		BD7C624726328FBA008C211F /* CarouselCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C624626328FBA008C211F /* CarouselCardView.swift */; };
+		BD7C624C26329044008C211F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C624B26329044008C211F /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		BD7C62272631393A008C211F /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		BD7C623126328CCF008C211F /* ShowCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCharacter.swift; sourceTree = "<group>"; };
 		BD7C624626328FBA008C211F /* CarouselCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCardView.swift; sourceTree = "<group>"; };
+		BD7C624B26329044008C211F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 		BD7C624126328F23008C211F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				BD7C624B26329044008C211F /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			files = (
 				BD7C621D262CD9F4008C211F /* InfinitePageView.swift in Sources */,
 				BD7C61F1262CD93C008C211F /* HomeView.swift in Sources */,
+				BD7C624C26329044008C211F /* HomeViewModel.swift in Sources */,
 				BD7C624726328FBA008C211F /* CarouselCardView.swift in Sources */,
 				BD7C623226328CCF008C211F /* ShowCharacter.swift in Sources */,
 				BD7C61EF262CD93C008C211F /* Breaking_Bad_FanApp.swift in Sources */,
