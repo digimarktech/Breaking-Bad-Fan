@@ -19,13 +19,13 @@ struct HomeView: View {
             NavigationView {
                 ScrollView {
                     InfinitePageView(pages: [
-                        CardView(color: .red) {
+                        CarouselCardView(color: .red) {
                             print("Red was pressed")
                         },
-                        CardView(color: .green) {
+                        CarouselCardView(color: .green) {
                             print("Green was pressed")
                         },
-                        CardView(color: .gray) {
+                        CarouselCardView(color: .gray) {
                             print("Gray was presed")
                         }
                     ])
@@ -80,20 +80,6 @@ struct HomeView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
-    }
-}
-
-struct CardView: View {
-    var color: Color
-    var handler: () -> Void
-    var body: some View {
-        Button(action: {
-            handler()
-        }, label: {
-            RoundedRectangle(cornerRadius: 10)
-                .fill(color)
-                .padding(24)
-        })
     }
 }
 

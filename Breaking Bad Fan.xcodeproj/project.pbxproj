@@ -17,6 +17,7 @@
 		BD7C6223262DF6AD008C211F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BD7C6222262DF6AD008C211F /* Kingfisher */; };
 		BD7C62282631393A008C211F /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C62272631393A008C211F /* CharacterDetailView.swift */; };
 		BD7C623226328CCF008C211F /* ShowCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C623126328CCF008C211F /* ShowCharacter.swift */; };
+		BD7C624726328FBA008C211F /* CarouselCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C624626328FBA008C211F /* CarouselCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		BD7C621C262CD9F4008C211F /* InfinitePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinitePageView.swift; sourceTree = "<group>"; };
 		BD7C62272631393A008C211F /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		BD7C623126328CCF008C211F /* ShowCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCharacter.swift; sourceTree = "<group>"; };
+		BD7C624626328FBA008C211F /* CarouselCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				BD7C61F0262CD93C008C211F /* HomeView.swift */,
 				BD7C62272631393A008C211F /* CharacterDetailView.swift */,
 				BD7C621C262CD9F4008C211F /* InfinitePageView.swift */,
+				BD7C624626328FBA008C211F /* CarouselCardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 			files = (
 				BD7C621D262CD9F4008C211F /* InfinitePageView.swift in Sources */,
 				BD7C61F1262CD93C008C211F /* HomeView.swift in Sources */,
+				BD7C624726328FBA008C211F /* CarouselCardView.swift in Sources */,
 				BD7C623226328CCF008C211F /* ShowCharacter.swift in Sources */,
 				BD7C61EF262CD93C008C211F /* Breaking_Bad_FanApp.swift in Sources */,
 				BD7C62282631393A008C211F /* CharacterDetailView.swift in Sources */,
