@@ -27,6 +27,7 @@
 		BD7C6298263377E8008C211F /* XCTestCase+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C6297263377E8008C211F /* XCTestCase+JSON.swift */; };
 		BD7C629E2633789C008C211F /* character.json in Resources */ = {isa = PBXBuildFile; fileRef = BD7C629D2633789C008C211F /* character.json */; };
 		BD7C62A6263379FF008C211F /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = BD7C62A5263379FF008C211F /* empty.json */; };
+		BD7C62AE26337C2B008C211F /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C62AD26337C2B008C211F /* LocationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		BD7C6297263377E8008C211F /* XCTestCase+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+JSON.swift"; sourceTree = "<group>"; };
 		BD7C629D2633789C008C211F /* character.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = character.json; sourceTree = "<group>"; };
 		BD7C62A5263379FF008C211F /* empty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = empty.json; sourceTree = "<group>"; };
+		BD7C62AD26337C2B008C211F /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				BD7C624B26329044008C211F /* HomeViewModel.swift */,
+				BD7C62AD26337C2B008C211F /* LocationViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				BD7C624726328FBA008C211F /* CarouselCardView.swift in Sources */,
 				BD7C623226328CCF008C211F /* ShowCharacter.swift in Sources */,
 				BD7C61EF262CD93C008C211F /* Breaking_Bad_FanApp.swift in Sources */,
+				BD7C62AE26337C2B008C211F /* LocationViewModel.swift in Sources */,
 				BD7C62282631393A008C211F /* CharacterDetailView.swift in Sources */,
 				BD7C626626333CED008C211F /* APIService.swift in Sources */,
 				BD7C626126329BC6008C211F /* APIError.swift in Sources */,
