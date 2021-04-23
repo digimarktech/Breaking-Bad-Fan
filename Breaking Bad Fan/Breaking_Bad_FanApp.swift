@@ -11,7 +11,7 @@ import SwiftUI
 struct Breaking_Bad_FanApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }

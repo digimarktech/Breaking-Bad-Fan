@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BD7C61EF262CD93C008C211F /* Breaking_Bad_FanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C61EE262CD93C008C211F /* Breaking_Bad_FanApp.swift */; };
-		BD7C61F1262CD93C008C211F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C61F0262CD93C008C211F /* ContentView.swift */; };
+		BD7C61F1262CD93C008C211F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C61F0262CD93C008C211F /* HomeView.swift */; };
 		BD7C61F3262CD940008C211F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7C61F2262CD940008C211F /* Assets.xcassets */; };
 		BD7C61F6262CD940008C211F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7C61F5262CD940008C211F /* Preview Assets.xcassets */; };
 		BD7C6201262CD940008C211F /* Breaking_Bad_FanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C6200262CD940008C211F /* Breaking_Bad_FanTests.swift */; };
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		BD7C61EB262CD93C008C211F /* Breaking Bad Fan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Breaking Bad Fan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7C61EE262CD93C008C211F /* Breaking_Bad_FanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breaking_Bad_FanApp.swift; sourceTree = "<group>"; };
-		BD7C61F0262CD93C008C211F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BD7C61F0262CD93C008C211F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		BD7C61F2262CD940008C211F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD7C61F5262CD940008C211F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD7C61F7262CD940008C211F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 			children = (
 				BD7C623026328C93008C211F /* Models */,
 				BD7C61EE262CD93C008C211F /* Breaking_Bad_FanApp.swift */,
-				BD7C61F0262CD93C008C211F /* ContentView.swift */,
+				BD7C61F0262CD93C008C211F /* HomeView.swift */,
 				BD7C61F2262CD940008C211F /* Assets.xcassets */,
 				BD7C61F7262CD940008C211F /* Info.plist */,
 				BD7C61F4262CD940008C211F /* Preview Content */,
@@ -285,7 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD7C621D262CD9F4008C211F /* InfinitePageView.swift in Sources */,
-				BD7C61F1262CD93C008C211F /* ContentView.swift in Sources */,
+				BD7C61F1262CD93C008C211F /* HomeView.swift in Sources */,
 				BD7C623226328CCF008C211F /* ShowCharacter.swift in Sources */,
 				BD7C61EF262CD93C008C211F /* Breaking_Bad_FanApp.swift in Sources */,
 				BD7C62282631393A008C211F /* CharacterDetailView.swift in Sources */,
