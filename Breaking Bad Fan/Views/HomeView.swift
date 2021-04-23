@@ -11,7 +11,9 @@ import Kingfisher
 /// Represents the home screen of the app.
 struct HomeView: View {
     
-    @StateObject var homeViewModel = HomeViewModel()
+    @StateObject private var homeViewModel = HomeViewModel()
+    @StateObject private var locationViewModel = LocationViewModel()
+    @State private var isPresented = false
     
     var body: some View {
         ZStack {
@@ -61,7 +63,7 @@ struct HomeView: View {
                     }.padding(.horizontal)
                     .navigationBarTitle("Breaking Bad")
                     .navigationBarItems(trailing: Button(action: {
-                        print("Location pressed")
+                        checkAuthorizationStatus()
                     }, label: {
                         Image(systemName: "location")
                     }))
@@ -72,6 +74,22 @@ struct HomeView: View {
             .onAppear {
                 self.homeViewModel.getCharacters()
             }
+        }
+    }
+    
+    private func checkAuthorizationStatus() {
+        switch locationViewModel.authorizationStatus {
+        case .notDetermined:
+            print("Need to request location")
+            locationViewModel.requestPermission()
+        case .authorizedAlways, .authorizedWhenInUse:
+            print("Show location view with tracking information")
+        case .denied:
+            print("Prompt user to allow permissions in settings")
+        case .restricted:
+            print("Location permissions are restricted")
+        @unknown default:
+            print("Unknown error processing location")
         }
     }
 }
