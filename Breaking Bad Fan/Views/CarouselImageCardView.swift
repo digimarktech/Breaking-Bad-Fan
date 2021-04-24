@@ -8,7 +8,7 @@
 import SwiftUI
 
 /// The card used in the carousel.
-struct CarouselCardView: View {
+struct CarouselImageCardView: View {
     
     /// The name of the image to display.
     var imageName: String

@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Kingfisher
 
 /// Represents the home screen of the app.
 struct HomeView: View {
@@ -21,41 +20,13 @@ struct HomeView: View {
             NavigationView {
                 ScrollView {
                     InfinitePageView(pages: [
-                        CarouselCardView(imageName: "season1"),
-                        CarouselCardView(imageName: "season2"),
-                        CarouselCardView(imageName: "season4")
+                        CarouselImageCardView(imageName: "season1"),
+                        CarouselImageCardView(imageName: "season2"),
+                        CarouselImageCardView(imageName: "season4")
                     ])
                     .frame(height: 300)
-                    VStack(alignment: .leading) {
-                        HStack {
-                            Text("Characters")
-                                .font(.title)
-                                .fontWeight(.medium)
-                            Spacer()
-                            Button("View All") {
-                                print("View all was pressed")
-                            }
-                        }
-                        ScrollView(.horizontal) {
-                            LazyHStack(spacing: 24) {
-                                ForEach(homeViewModel.characters) { character in
-                                    VStack(alignment: .leading) {
-                                        NavigationLink(destination: CharacterDetailView(character: character)) {
-                                            KFImage(character.imageURL)
-                                                .resizable()
-                                                .aspectRatio(contentMode: .fill)
-                                                .frame(width: 200, height: 300)
-                                                .clipped()
-                                                .cornerRadius(10)
-                                        }
-                                        Text(character.name)
-                                            .font(.subheadline)
-                                    }
-                                    .padding(.bottom, 16)
-                                }
-                            }
-                        }
-                    }.padding(.horizontal)
+                    CharactersView()
+                        .environmentObject(homeViewModel)
                     .navigationBarTitle("Breaking Bad")
                     .navigationBarItems(trailing: Button(action: {
                         checkAuthorizationStatus()
