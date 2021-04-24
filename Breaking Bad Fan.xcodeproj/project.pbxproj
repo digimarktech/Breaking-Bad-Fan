@@ -11,7 +11,6 @@
 		BD7C61F1262CD93C008C211F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C61F0262CD93C008C211F /* HomeView.swift */; };
 		BD7C61F3262CD940008C211F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7C61F2262CD940008C211F /* Assets.xcassets */; };
 		BD7C61F6262CD940008C211F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7C61F5262CD940008C211F /* Preview Assets.xcassets */; };
-		BD7C620C262CD940008C211F /* Breaking_Bad_FanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C620B262CD940008C211F /* Breaking_Bad_FanUITests.swift */; };
 		BD7C621D262CD9F4008C211F /* InfinitePageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C621C262CD9F4008C211F /* InfinitePageView.swift */; };
 		BD7C6223262DF6AD008C211F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BD7C6222262DF6AD008C211F /* Kingfisher */; };
 		BD7C62282631393A008C211F /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C62272631393A008C211F /* CharacterDetailView.swift */; };
@@ -40,13 +39,6 @@
 			remoteGlobalIDString = BD7C61EA262CD93C008C211F;
 			remoteInfo = "Breaking Bad Fan";
 		};
-		BD7C6208262CD940008C211F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BD7C61E3262CD93B008C211F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BD7C61EA262CD93C008C211F;
-			remoteInfo = "Breaking Bad Fan";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -58,9 +50,6 @@
 		BD7C61F7262CD940008C211F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD7C61FC262CD940008C211F /* Breaking Bad FanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Breaking Bad FanTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7C6202262CD940008C211F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BD7C6207262CD940008C211F /* Breaking Bad FanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Breaking Bad FanUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD7C620B262CD940008C211F /* Breaking_Bad_FanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breaking_Bad_FanUITests.swift; sourceTree = "<group>"; };
-		BD7C620D262CD940008C211F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD7C621C262CD9F4008C211F /* InfinitePageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinitePageView.swift; sourceTree = "<group>"; };
 		BD7C62272631393A008C211F /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 		BD7C623126328CCF008C211F /* ShowCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCharacter.swift; sourceTree = "<group>"; };
@@ -96,13 +85,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD7C6204262CD940008C211F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -111,7 +93,6 @@
 			children = (
 				BD7C61ED262CD93C008C211F /* Breaking Bad Fan */,
 				BD7C61FF262CD940008C211F /* Breaking Bad FanTests */,
-				BD7C620A262CD940008C211F /* Breaking Bad FanUITests */,
 				BD7C61EC262CD93C008C211F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,7 +102,6 @@
 			children = (
 				BD7C61EB262CD93C008C211F /* Breaking Bad Fan.app */,
 				BD7C61FC262CD940008C211F /* Breaking Bad FanTests.xctest */,
-				BD7C6207262CD940008C211F /* Breaking Bad FanUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,15 +138,6 @@
 				BD7C6202262CD940008C211F /* Info.plist */,
 			);
 			path = "Breaking Bad FanTests";
-			sourceTree = "<group>";
-		};
-		BD7C620A262CD940008C211F /* Breaking Bad FanUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BD7C620B262CD940008C211F /* Breaking_Bad_FanUITests.swift */,
-				BD7C620D262CD940008C211F /* Info.plist */,
-			);
-			path = "Breaking Bad FanUITests";
 			sourceTree = "<group>";
 		};
 		BD7C623026328C93008C211F /* Models */ = {
@@ -277,24 +248,6 @@
 			productReference = BD7C61FC262CD940008C211F /* Breaking Bad FanTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BD7C6206262CD940008C211F /* Breaking Bad FanUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BD7C6216262CD940008C211F /* Build configuration list for PBXNativeTarget "Breaking Bad FanUITests" */;
-			buildPhases = (
-				BD7C6203262CD940008C211F /* Sources */,
-				BD7C6204262CD940008C211F /* Frameworks */,
-				BD7C6205262CD940008C211F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BD7C6209262CD940008C211F /* PBXTargetDependency */,
-			);
-			name = "Breaking Bad FanUITests";
-			productName = "Breaking Bad FanUITests";
-			productReference = BD7C6207262CD940008C211F /* Breaking Bad FanUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -310,10 +263,6 @@
 					BD7C61FB262CD940008C211F = {
 						CreatedOnToolsVersion = 12.4;
 						LastSwiftMigration = 1240;
-						TestTargetID = BD7C61EA262CD93C008C211F;
-					};
-					BD7C6206262CD940008C211F = {
-						CreatedOnToolsVersion = 12.4;
 						TestTargetID = BD7C61EA262CD93C008C211F;
 					};
 				};
@@ -336,7 +285,6 @@
 			targets = (
 				BD7C61EA262CD93C008C211F /* Breaking Bad Fan */,
 				BD7C61FB262CD940008C211F /* Breaking Bad FanTests */,
-				BD7C6206262CD940008C211F /* Breaking Bad FanUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -357,13 +305,6 @@
 			files = (
 				BD7C629E2633789C008C211F /* character.json in Resources */,
 				BD7C62A6263379FF008C211F /* empty.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BD7C6205262CD940008C211F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,14 +342,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BD7C6203262CD940008C211F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BD7C620C262CD940008C211F /* Breaking_Bad_FanUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -416,11 +349,6 @@
 			isa = PBXTargetDependency;
 			target = BD7C61EA262CD93C008C211F /* Breaking Bad Fan */;
 			targetProxy = BD7C61FD262CD940008C211F /* PBXContainerItemProxy */;
-		};
-		BD7C6209262CD940008C211F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BD7C61EA262CD93C008C211F /* Breaking Bad Fan */;
-			targetProxy = BD7C6208262CD940008C211F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -632,46 +560,6 @@
 			};
 			name = Release;
 		};
-		BD7C6217262CD940008C211F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4T87K25SZU;
-				INFOPLIST_FILE = "Breaking Bad FanUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.digimarktech.Breaking-Bad-FanUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Breaking Bad Fan";
-			};
-			name = Debug;
-		};
-		BD7C6218262CD940008C211F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4T87K25SZU;
-				INFOPLIST_FILE = "Breaking Bad FanUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.digimarktech.Breaking-Bad-FanUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Breaking Bad Fan";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -698,15 +586,6 @@
 			buildConfigurations = (
 				BD7C6214262CD940008C211F /* Debug */,
 				BD7C6215262CD940008C211F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BD7C6216262CD940008C211F /* Build configuration list for PBXNativeTarget "Breaking Bad FanUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BD7C6217262CD940008C211F /* Debug */,
-				BD7C6218262CD940008C211F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
