@@ -8,10 +8,14 @@
 import SwiftUI
 import Kingfisher
 
+/// Displays detail information about a character
 struct CharacterDetailView: View {
 
     @Environment(\.presentationMode) var presentationMode
+    
+    /// The character being displayed.
     var character: ShowCharacter
+    
     var body: some View {
         ZStack(alignment: .topLeading) {
             ScrollView(.vertical) {
@@ -33,36 +37,8 @@ struct CharacterDetailView: View {
                         DetailRowView(label: "Nickname: ", value: character.nickname)
                         DetailRowView(label: "Status: ", value: character.status)
                         DetailRowView(label: "Birthday: ", value: character.birthday)
-                        VStack(alignment: .leading) {
-                            Text("Occupation: ")
-                                .foregroundColor(.white)
-                                .font(.subheadline)
-                                .fontWeight(.medium)
-                                .padding(.bottom, 2)
-                            ForEach(character.occupation, id: \.self) { occupation in
-                                HStack {
-                                    Text("∗ ")
-                                    Text(occupation)
-                                }
-                                .foregroundColor(.white)
-                                .font(.subheadline)
-                            }
-                        }
-                        VStack(alignment: .leading) {
-                            Text("Seasons: ")
-                                .foregroundColor(.white)
-                                .font(.subheadline)
-                                .fontWeight(.medium)
-                                .padding(.bottom, 2)
-                            ForEach(character.seasons, id: \.self) { season in
-                                HStack {
-                                    Text("∗ ")
-                                    Text("\(season)")
-                                }
-                                .foregroundColor(.white)
-                                .font(.subheadline)
-                            }
-                        }
+                        DetailListRowView(label: "Occupation: ", items: character.occupation)
+                        DetailListRowView(label: "Seasons: ", items: character.seasons.map { "\($0)" })
                     }
                     Spacer()
                 }
