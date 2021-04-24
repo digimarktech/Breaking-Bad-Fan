@@ -35,11 +35,9 @@ struct HomeView: View {
                     }))
                     
                 }
-                .background(Color.black)
                 .edgesIgnoringSafeArea(.bottom)
                 
             }
-            
             .onAppear {
                 self.homeViewModel.getCharacters()
                 locationViewModel.requestPermission()
@@ -52,6 +50,7 @@ struct HomeView: View {
                 Alert(title: Text(locationError.title), message: Text(locationError.message), dismissButton: .default(Text("Ok")))
             }
         }
+        
     }
     
     private func checkAuthorizationStatus() {

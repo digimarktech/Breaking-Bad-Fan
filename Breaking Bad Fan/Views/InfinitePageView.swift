@@ -49,8 +49,8 @@ struct InfinitePageView<Page: View>: UIViewControllerRepresentable {
                 return hostingController
             })
             let pageControl = UIPageControl.appearance()
-            pageControl.currentPageIndicatorTintColor = .white
-            pageControl.pageIndicatorTintColor = UIColor.lightGray.withAlphaComponent(0.5)
+            pageControl.currentPageIndicatorTintColor = .black
+            pageControl.pageIndicatorTintColor = .lightGray
         }
         
         func presentationIndex(for pageViewController: UIPageViewController) -> Int {
