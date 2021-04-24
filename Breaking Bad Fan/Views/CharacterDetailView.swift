@@ -29,42 +29,10 @@ struct CharacterDetailView: View {
                         Text(character.name)
                             .font(.system(size: 35, weight: .bold))
                             .foregroundColor(.white)
-                        HStack {
-                            Text("Real name: ")
-                                .foregroundColor(.white)
-                                .font(.subheadline)
-                                .fontWeight(.medium)
-                            Text(character.realName)
-                                .foregroundColor(.white)
-                                .font(.subheadline)
-                        }
-                        HStack {
-                            Text("Nickname: ")
-                                .foregroundColor(.white)
-                                .font(.subheadline)
-                                .fontWeight(.medium)
-                            Text(character.nickname)
-                                .foregroundColor(.white)
-                                .font(.subheadline)
-                        }
-                        HStack {
-                            Text("Status: ")
-                                .foregroundColor(.white)
-                                .font(.subheadline)
-                                .fontWeight(.medium)
-                            Text(character.status)
-                                .foregroundColor(.white)
-                                .font(.subheadline)
-                        }
-                        HStack {
-                            Text("Birthday: ")
-                                .foregroundColor(.white)
-                                .font(.subheadline)
-                                .fontWeight(.medium)
-                            Text(character.birthday)
-                                .foregroundColor(.white)
-                                .font(.subheadline)
-                        }
+                        DetailRowView(label: "Real name: ", value: character.realName)
+                        DetailRowView(label: "Nickname: ", value: character.nickname)
+                        DetailRowView(label: "Status: ", value: character.status)
+                        DetailRowView(label: "Birthday: ", value: character.birthday)
                         VStack(alignment: .leading) {
                             Text("Occupation: ")
                                 .foregroundColor(.white)

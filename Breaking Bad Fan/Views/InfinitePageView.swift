@@ -98,7 +98,7 @@ struct InfinitePageView<Page: View>: UIViewControllerRepresentable {
 }
 
 struct InfinitePageView_Previews: PreviewProvider {
-    @State static private var currentPage = 0
+    
     static var previews: some View {
         InfinitePageView(pages: [
             Color(.systemRed),

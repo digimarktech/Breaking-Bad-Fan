@@ -30,6 +30,7 @@
 		BD7C62B326338747008C211F /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C62B226338747008C211F /* LocationView.swift */; };
 		BD7C62B826339A21008C211F /* LocationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C62B726339A21008C211F /* LocationError.swift */; };
 		BD7C62C126339BD4008C211F /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C62C026339BD4008C211F /* CharactersView.swift */; };
+		BD7C62C726339F2D008C211F /* DetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C62C626339F2D008C211F /* DetailRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		BD7C62B226338747008C211F /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
 		BD7C62B726339A21008C211F /* LocationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationError.swift; sourceTree = "<group>"; };
 		BD7C62C026339BD4008C211F /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
+		BD7C62C626339F2D008C211F /* DetailRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				BD7C624626328FBA008C211F /* CarouselImageCardView.swift */,
 				BD7C62B226338747008C211F /* LocationView.swift */,
 				BD7C62C026339BD4008C211F /* CharactersView.swift */,
+				BD7C62C626339F2D008C211F /* DetailRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				BD7C62AE26337C2B008C211F /* LocationViewModel.swift in Sources */,
 				BD7C62C126339BD4008C211F /* CharactersView.swift in Sources */,
 				BD7C62282631393A008C211F /* CharacterDetailView.swift in Sources */,
+				BD7C62C726339F2D008C211F /* DetailRowView.swift in Sources */,
 				BD7C62B326338747008C211F /* LocationView.swift in Sources */,
 				BD7C62B826339A21008C211F /* LocationError.swift in Sources */,
 				BD7C626626333CED008C211F /* APIService.swift in Sources */,
