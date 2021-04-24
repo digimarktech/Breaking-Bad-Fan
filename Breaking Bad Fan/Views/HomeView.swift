@@ -29,15 +29,9 @@ struct HomeView: View {
             NavigationView {
                 ScrollView {
                     InfinitePageView(pages: [
-                        CarouselCardView(color: .red) {
-                            print("Red was pressed")
-                        },
-                        CarouselCardView(color: .green) {
-                            print("Green was pressed")
-                        },
-                        CarouselCardView(color: .gray) {
-                            print("Gray was presed")
-                        }
+                        CarouselCardView(imageName: "season1"),
+                        CarouselCardView(imageName: "season2"),
+                        CarouselCardView(imageName: "season4")
                     ])
                     .frame(height: 300)
                     VStack(alignment: .leading) {

@@ -7,16 +7,19 @@
 
 import SwiftUI
 
+/// The card used in the carousel.
 struct CarouselCardView: View {
-    var color: Color
-    var handler: () -> Void
+    
+    /// The name of the image to display.
+    var imageName: String
+    
     var body: some View {
-        Button(action: {
-            handler()
-        }, label: {
-            RoundedRectangle(cornerRadius: 10)
-                .fill(color)
-                .padding(24)
-        })
+        Image(imageName)
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(width: 300)
+            .clipped()
+            .cornerRadius(20)
+            .padding(24)
     }
 }
