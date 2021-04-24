@@ -35,8 +35,11 @@ struct HomeView: View {
                     }))
                     
                 }
+                .background(Color.black)
                 .edgesIgnoringSafeArea(.bottom)
+                
             }
+            
             .onAppear {
                 self.homeViewModel.getCharacters()
                 locationViewModel.requestPermission()

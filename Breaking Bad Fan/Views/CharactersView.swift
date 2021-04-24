@@ -16,6 +16,7 @@ struct CharactersView: View {
             Text("Characters")
                 .font(.title)
                 .fontWeight(.medium)
+                .foregroundColor(.white)
             ScrollView(.horizontal) {
                 LazyHStack(spacing: 24) {
                     ForEach(homeViewModel.characters) { character in
@@ -30,6 +31,7 @@ struct CharactersView: View {
                             }
                             Text(character.name)
                                 .font(.subheadline)
+                                .foregroundColor(.white)
                         }
                         .padding(.bottom, 16)
                     }
