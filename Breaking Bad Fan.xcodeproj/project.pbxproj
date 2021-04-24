@@ -29,6 +29,7 @@
 		BD7C62A6263379FF008C211F /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = BD7C62A5263379FF008C211F /* empty.json */; };
 		BD7C62AE26337C2B008C211F /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C62AD26337C2B008C211F /* LocationViewModel.swift */; };
 		BD7C62B326338747008C211F /* LocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C62B226338747008C211F /* LocationView.swift */; };
+		BD7C62B826339A21008C211F /* LocationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C62B726339A21008C211F /* LocationError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 		BD7C62A5263379FF008C211F /* empty.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = empty.json; sourceTree = "<group>"; };
 		BD7C62AD26337C2B008C211F /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 		BD7C62B226338747008C211F /* LocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationView.swift; sourceTree = "<group>"; };
+		BD7C62B726339A21008C211F /* LocationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				BD7C623126328CCF008C211F /* ShowCharacter.swift */,
+				BD7C62B726339A21008C211F /* LocationError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				BD7C62AE26337C2B008C211F /* LocationViewModel.swift in Sources */,
 				BD7C62282631393A008C211F /* CharacterDetailView.swift in Sources */,
 				BD7C62B326338747008C211F /* LocationView.swift in Sources */,
+				BD7C62B826339A21008C211F /* LocationError.swift in Sources */,
 				BD7C626626333CED008C211F /* APIService.swift in Sources */,
 				BD7C626126329BC6008C211F /* APIError.swift in Sources */,
 			);

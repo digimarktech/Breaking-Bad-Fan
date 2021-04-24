@@ -8,14 +8,6 @@
 import SwiftUI
 import Kingfisher
 
-struct LocationError: Identifiable {
-    var id: String {
-        return message
-    }
-    var title: String
-    var message: String
-}
-
 /// Represents the home screen of the app.
 struct HomeView: View {
     
