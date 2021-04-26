@@ -67,15 +67,17 @@ struct HomeView: View {
         case .authorizedAlways, .authorizedWhenInUse:
             isPresented.toggle()
         case .denied:
-            self.locationPersmissionsError = .denied
-            self.isPresentingAlert.toggle()
+            present(locationError: .denied)
         case .restricted:
-            self.locationPersmissionsError = .restricted
-            self.isPresentingAlert.toggle()
+            present(locationError: .restricted)
         @unknown default:
-            self.locationPersmissionsError = .unknown
-            self.isPresentingAlert.toggle()
+            present(locationError: .unknown)
         }
+    }
+    
+    private func present(locationError: LocationPermissionError) {
+        self.locationPersmissionsError = locationError
+        self.isPresentingAlert.toggle()
     }
 }
 
