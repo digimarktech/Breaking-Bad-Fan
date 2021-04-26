@@ -7,42 +7,37 @@
 
 import Foundation
 
-/// Used to display location error alert.
-struct LocationError {
+/// An error based on location related permissions.
+enum LocationPermissionError: Error, LocalizedError {
     
-    /// The title of the alert.
-    var title: String
+    /// Error where user has denied location permissions.
+    case denied
     
-    /// The message of the alert.
-    var message: String
-}
-
-// MARK: - Identifiable
-
-extension LocationError: Identifiable {
+    /// Error where user has restricted permissions.
+    case restricted
     
-    /// Unique ID used for identifable purposes
-    var id: String {
-        return message
+    /// Unknown error type.
+    case unknown
+    
+    var errorDescription: String? {
+        switch self {
+        case .denied:
+            return "Permissions Denied"
+        case .restricted:
+            return "Permissions Restricted"
+        case .unknown:
+            return "Unknown Error"
+        }
     }
-}
-
-/// Used to display location error alert.
-struct DisplayError {
     
-    /// The title of the alert.
-    var title: String
-    
-    /// The message of the alert.
-    var message: String
-}
-
-// MARK: - Identifiable
-
-extension DisplayError: Identifiable {
-    
-    /// Unique ID used for identifable purposes
-    var id: String {
-        return message
+    var failureReason: String? {
+        switch self {
+        case .denied:
+            return "Please allow location permissions in settings."
+        case .restricted:
+            return "Location permissions are restricted"
+        case .unknown:
+            return "Unable to process location at this time."
+        }
     }
 }

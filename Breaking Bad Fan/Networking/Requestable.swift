@@ -59,7 +59,7 @@ extension Requestable {
             @unknown default:
                 break
             }
-            return APIError.failedToDecode(error: errorToReport)
+            return APIError.failedToDecode(errorToReport)
         } else {
             return error
         }

@@ -13,7 +13,8 @@ struct HomeView: View {
     @StateObject private var homeViewModel = HomeViewModel()
     @StateObject private var locationViewModel = LocationViewModel()
     @State private var isPresented = false
-    @State private var locationError: LocationError?
+    @State private var isPresentingAlert = false
+    @State private var locationPersmissionsError: LocationPermissionError?
     
     var body: some View {
         ZStack {
@@ -36,6 +37,9 @@ struct HomeView: View {
                     
                 }
                 .edgesIgnoringSafeArea(.bottom)
+                .alert(isPresented: homeViewModel.isPresentingAlert) {
+                    Alert(title: Text(homeViewModel.apiError?.errorDescription ?? ""), message: Text(homeViewModel.apiError?.failureReason ?? ""), dismissButton: .default(Text("OK")))
+                }
                 
             }
             .onAppear {
@@ -46,11 +50,8 @@ struct HomeView: View {
                 LocationView()
                     .environmentObject(locationViewModel)
             }
-            .alert(item: $locationError) { locationError in
-                Alert(title: Text(locationError.title), message: Text(locationError.message), dismissButton: .default(Text("Ok")))
-            }
-            .alert(isPresented: homeViewModel.isPresentingAlert) {
-                Alert(title: Text(homeViewModel.displayError?.title ?? ""), message: Text(homeViewModel.displayError?.message ?? ""), dismissButton: .default(Text("OK")))
+            .alert(isPresented: $isPresentingAlert) {
+                Alert(title: Text(locationPersmissionsError?.errorDescription ?? ""), message: Text(locationPersmissionsError?.failureReason ?? ""), dismissButton: .default(Text("Ok")))
             }
             if homeViewModel.isLoading {
                 SpinnerView()
@@ -66,11 +67,14 @@ struct HomeView: View {
         case .authorizedAlways, .authorizedWhenInUse:
             isPresented.toggle()
         case .denied:
-            self.locationError = LocationError(title: "Permissions Denied", message: "Please allow location permissions in settings.")
+            self.locationPersmissionsError = .denied
+            self.isPresentingAlert.toggle()
         case .restricted:
-            self.locationError = LocationError(title: "Permissions Restricted", message: "Location permissions are restricted")
+            self.locationPersmissionsError = .restricted
+            self.isPresentingAlert.toggle()
         @unknown default:
-            self.locationError = LocationError(title: "Unknown Error", message: "Unable to process location at this time.")
+            self.locationPersmissionsError = .unknown
+            self.isPresentingAlert.toggle()
         }
     }
 }
