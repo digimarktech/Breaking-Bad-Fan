@@ -32,6 +32,7 @@
 		BD7C62C126339BD4008C211F /* CharactersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C62C026339BD4008C211F /* CharactersView.swift */; };
 		BD7C62C726339F2D008C211F /* DetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C62C626339F2D008C211F /* DetailRowView.swift */; };
 		BD7C62CB2633A132008C211F /* DetailListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C62CA2633A131008C211F /* DetailListRowView.swift */; };
+		BD7C62CF26367EC5008C211F /* SpinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C62CE26367EC5008C211F /* SpinnerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		BD7C62C026339BD4008C211F /* CharactersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersView.swift; sourceTree = "<group>"; };
 		BD7C62C626339F2D008C211F /* DetailRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRowView.swift; sourceTree = "<group>"; };
 		BD7C62CA2633A131008C211F /* DetailListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailListRowView.swift; sourceTree = "<group>"; };
+		BD7C62CE26367EC5008C211F /* SpinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinnerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 				BD7C62C026339BD4008C211F /* CharactersView.swift */,
 				BD7C62C626339F2D008C211F /* DetailRowView.swift */,
 				BD7C62CA2633A131008C211F /* DetailListRowView.swift */,
+				BD7C62CE26367EC5008C211F /* SpinnerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				BD7C624726328FBA008C211F /* CarouselImageCardView.swift in Sources */,
 				BD7C623226328CCF008C211F /* ShowCharacter.swift in Sources */,
 				BD7C61EF262CD93C008C211F /* Breaking_Bad_FanApp.swift in Sources */,
+				BD7C62CF26367EC5008C211F /* SpinnerView.swift in Sources */,
 				BD7C62AE26337C2B008C211F /* LocationViewModel.swift in Sources */,
 				BD7C62C126339BD4008C211F /* CharactersView.swift in Sources */,
 				BD7C62282631393A008C211F /* CharacterDetailView.swift in Sources */,

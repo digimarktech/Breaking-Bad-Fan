@@ -52,6 +52,9 @@ struct HomeView: View {
             .alert(isPresented: homeViewModel.isPresentingAlert) {
                 Alert(title: Text(homeViewModel.displayError?.title ?? ""), message: Text(homeViewModel.displayError?.message ?? ""), dismissButton: .default(Text("OK")))
             }
+            if homeViewModel.isLoading {
+                SpinnerView()
+            }
         }
         
     }

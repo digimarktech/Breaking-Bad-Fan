@@ -18,6 +18,9 @@ final class HomeViewModel: ObservableObject {
     /// An error that can be displayed.
     @Published private(set) var displayError: DisplayError?
     
+    /// Whether or not we are loading data from the network.
+    @Published var isLoading: Bool = false
+    
     /// Whether or not we are displaying an alert.
     ///
     /// This will be true if our `displayError ` has a value.
@@ -35,13 +38,14 @@ final class HomeViewModel: ObservableObject {
     
     /// Request characters from the api.
     func getCharacters() {
+        isLoading = true
         cancellable = apiService.getCharacters(CharacterEndpoint())
             .sink { [weak self] completion in
                 switch completion {
                 case .failure(let error):
                     self?.displayError = DisplayError(title: "Error", message: error.localizedDescription)
                 case .finished:
-                break
+                    self?.isLoading = false
                 }
             } receiveValue: { [weak self] characters in
                 self?.characters = characters
