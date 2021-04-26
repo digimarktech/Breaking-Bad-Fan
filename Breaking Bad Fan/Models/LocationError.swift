@@ -26,3 +26,23 @@ extension LocationError: Identifiable {
         return message
     }
 }
+
+/// Used to display location error alert.
+struct DisplayError {
+    
+    /// The title of the alert.
+    var title: String
+    
+    /// The message of the alert.
+    var message: String
+}
+
+// MARK: - Identifiable
+
+extension DisplayError: Identifiable {
+    
+    /// Unique ID used for identifable purposes
+    var id: String {
+        return message
+    }
+}

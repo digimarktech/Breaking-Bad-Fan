@@ -35,8 +35,33 @@ extension Requestable {
                 return $0.data
             }
             .decode(type: Model.self, decoder: JSONDecoder())
+            .mapError({ error in
+                return process(error: error)
+            })
             .receive(on: queue)
             .retry(retries)
             .eraseToAnyPublisher()
+    }
+    
+    private func process(error: Error) -> Error {
+        if let error = error as? DecodingError {
+            var errorToReport = error.localizedDescription
+            switch error {
+            case .dataCorrupted(let context):
+                let details = context.underlyingError?.localizedDescription ?? context.codingPath.map { $0.stringValue }.joined(separator: ".")
+                errorToReport = "\(context.debugDescription) - (\(details))"
+            case .keyNotFound(let key, let context):
+                let details = context.underlyingError?.localizedDescription ?? context.codingPath.map { $0.stringValue }.joined(separator: ".")
+                errorToReport = "\(context.debugDescription) (key: \(key), \(details))"
+            case .typeMismatch(let type, let context), .valueNotFound(let type, let context):
+                let details = context.underlyingError?.localizedDescription ?? context.codingPath.map { $0.stringValue }.joined(separator: ".")
+                errorToReport = "\(context.debugDescription) (type: \(type), \(details))"
+            @unknown default:
+                break
+            }
+            return APIError.failedToDecode(error: errorToReport)
+        } else {
+            return error
+        }
     }
 }

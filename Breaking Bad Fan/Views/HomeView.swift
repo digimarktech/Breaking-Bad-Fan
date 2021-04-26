@@ -49,6 +49,9 @@ struct HomeView: View {
             .alert(item: $locationError) { locationError in
                 Alert(title: Text(locationError.title), message: Text(locationError.message), dismissButton: .default(Text("Ok")))
             }
+            .alert(isPresented: homeViewModel.isPresentingAlert) {
+                Alert(title: Text(homeViewModel.displayError?.title ?? ""), message: Text(homeViewModel.displayError?.message ?? ""), dismissButton: .default(Text("OK")))
+            }
         }
         
     }
