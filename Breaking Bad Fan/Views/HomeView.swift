@@ -12,7 +12,7 @@ struct HomeView: View {
     
     @StateObject private var homeViewModel = HomeViewModel()
     @StateObject private var locationViewModel = LocationViewModel()
-    @State private var isPresented = false
+    @State private var isPresentingLocationView = false
     @State private var isPresentingAlert = false
     @State private var locationPersmissionsError: LocationPermissionError?
     
@@ -46,7 +46,7 @@ struct HomeView: View {
                 self.homeViewModel.getCharacters()
                 locationViewModel.requestPermission()
             }
-            .sheet(isPresented: $isPresented) {
+            .sheet(isPresented: $isPresentingLocationView) {
                 LocationView()
                     .environmentObject(locationViewModel)
             }
@@ -65,7 +65,7 @@ struct HomeView: View {
         case .notDetermined:
             locationViewModel.requestPermission()
         case .authorizedAlways, .authorizedWhenInUse:
-            isPresented.toggle()
+            isPresentingLocationView.toggle()
         case .denied:
             present(locationError: .denied)
         case .restricted:
